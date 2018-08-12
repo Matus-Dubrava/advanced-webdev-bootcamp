@@ -1,0 +1,61 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-basis: 800px;
+}
+
+
+article {
+  background: red;
+  flex: 4 0 60%;
+}
+
+nav {
+  background-color: orange;
+  order: -1;
+  flex: 1 0 20%;
+}
+
+aside {
+  background-color: yellow;
+  flex: 1 0 20%;
+}
+
+footer, header {
+  background-color: blue;
+  flex-basis: 100px;
+  flex-grow: 1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media all and (max-width: 640px) {
+  main {
+    flex-direction: column;
+  }
+
+  nav {
+    order: 0;
+  }
+
+}

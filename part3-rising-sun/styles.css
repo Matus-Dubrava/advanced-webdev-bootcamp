@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2c3e50;
+  animation-name: sky;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.grass {
+  background: green;
+  height: 1000px;
+  width: 100%;
+  position: absolute;
+}
+
+.sun {
+  background: #f1c40f;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation-name: risingsun;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes risingsun {
+  0% {
+    background: #orange;
+    transform: translate(-200px, 200px);
+  }
+  25% {
+    background: yellow;
+    transform: translate(200px, -0px);
+  }
+  50% {
+    transform: translate(400px, -50px);
+  }
+  75% {
+    background: yellow;
+    transform: translate(600px, 0px);
+  }
+  100% {
+    background: red;
+    transform: translate(800px, 200px);
+  }
+}
+
+@keyframes sky {
+  0% {
+    background-color: navy;
+  }
+  10% {
+    background-color: pink;
+  }
+  30% {
+    background-color: cyan;
+  }
+  70% {
+    background-color: cyan;
+  }
+  90% {
+    background-color: pink;
+  }
+  100% {
+    background-color: navy;
+  }
+}

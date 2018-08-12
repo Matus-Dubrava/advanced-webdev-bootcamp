@@ -1,0 +1,36 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+.box {
+  background: #e54444;
+  color: white;
+  flex-basis: 250px;
+  flex-grow: 1;
+}
+
+.box-middle {
+  background: #b23535;
+}
+
+.box h6 {
+  padding: 20px 0 10px 25px;
+  margin: 0;
+  font-weight: 200;
+}
+
+.box p {
+  padding: 10px 25px 40px 25px;
+  margin: 0;
+  font-weight: 200;
+  font-size: 1.3em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
