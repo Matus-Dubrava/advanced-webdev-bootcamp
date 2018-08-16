@@ -1,0 +1,59 @@
+body {
+  background-color: #e4e4e4;
+}
+
+h1 {
+  text-align: center;
+}
+
+#notes {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.note {
+  background-color: #fdffb7;
+  border: 8px solid #d4daa7;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.temp-note {
+  background-color: #4ccea5;
+  border: 8px solid #369779;
+  display: none;
+  order: 1;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  width: 50%;
+}
+
+input,
+button {
+  padding: 10px;
+}
+
+button {
+  background-color: #ff9494;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #fe2222;
+}
+
+button:focus {
+  outline: none;
+}
