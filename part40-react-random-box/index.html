@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Component Random Box</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="text/babel">
+
+    function getRandomColor(colors) {
+      const idx = Math.floor(Math.random() * colors.length);
+      return colors[idx];
+    }
+
+    function getRandomNum(start, end) {
+      return Math.floor(Math.random() * (end + start)) - start;
+    }
+
+    class RandomBox extends React.Component {
+      render() {
+        const colors = ['red', 'blue', 'green', 'purple'];
+
+        const divStyle = {
+          fontSize: getRandomNum(10, 50),
+          backgroundColor: getRandomColor(colors),
+          width: '300px',
+          height: '150px',
+          textAlign: 'center',
+          lineHeight: '150px'
+        };
+
+        return (
+          <div style={ divStyle }>
+            Random Box
+          </div>
+        )
+      }
+    }
+
+    ReactDOM.render(<RandomBox />, document.getElementById('app'));
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #333;
+}
+
+form {
+  margin: 20px 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+ol {
+  padding: 0;
+}
+input {
+  flex-basis: 300px;
+  box-sizing: border-box;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+}
+
+input:focus {
+  border: 2px solid lightblue;
+}
+
+button {
+  flex-basis: 150px;
+  box-sizing: border-box;
+  margin-left: 20px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid lightblue;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.85em;
+  color: #333;
+  transition: 0.15s all ease-in-out;
+}
+
+button:hover {
+  background: lightblue;
+}
+
+button:active {
+  background: blue;
+  border: 2px solid blue; 
+}

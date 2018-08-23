@@ -1,0 +1,65 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.main-header {
+  min-height: 200px;
+  background-color: #010028;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.main-header h1 {
+  text-align: center;
+}
+
+.main-header input {
+  margin: 20px 20px 0 0;
+}
+
+.main-header label {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.2s opacity ease-in-out;
+}
+
+label.active-radio {
+  opacity: 1;
+}
+
+.main-header label:hover {
+  opacity: 1;
+}
+
+.radio-group div {
+  display: inline;
+}
+
+.map {
+  margin: 30px;
+}
+
+.tooltip {
+  position: absolute;
+  opacity: 0;
+  padding: 10px;
+  border: 2px solid #555;
+  border-radius: 5px;
+  background: #968169;
+  pointer-events: none;
+}
+
+.tooltip p {
+  margin: 1px;
+}
+
+.stroked {
+  stroke: black;
+  stroke-width: 2px;
+}

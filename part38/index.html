@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>C02 Emissions</h1>
+      <div class="radio-group">
+        <div>
+          <label for="emissions-radio">Emissions</label>
+          <input id="emissions-radio" type="radio" name="emissions"
+          value="emissions"/>
+        </div>
+        <div>
+          <label for="emissions-pc-radio" class="active-radio">Emissions Per Capita</label>
+          <input id="emissions-pc-radio" type="radio" name="emissions"
+            value="emissionsPerCapita" checked />
+        </div>
+      </div>
+      <input class="year-input" type="range" step="1">
+    </header>
+
+    <svg class="map"></svg>
+    <svg class="histo"></svg>
+
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
